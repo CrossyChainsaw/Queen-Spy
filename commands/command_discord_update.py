@@ -1,6 +1,6 @@
 import discord
 import json
-from classes.DiscordAccount import DiscordAccount
+from Queen_Spy.classes.DiscordAccount import DiscordAccount
 
 
 async def update_discord_data(ctx):

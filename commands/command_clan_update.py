@@ -1,5 +1,5 @@
 import json
-from modules.api import clan_request
+from Queen_Spy.modules.api import clan_request
 
 
 def update_clan_data(ctx):

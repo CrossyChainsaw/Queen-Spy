@@ -1,6 +1,6 @@
 import json
 import discord
-from classes.User import User
+from Queen_Spy.classes.User import User
 
 h = 'hello time'
 g = 'swagg moment'

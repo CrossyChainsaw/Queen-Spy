@@ -1,7 +1,7 @@
 import discord
-from commands.command_link_list import get_not_linked_brawlhalla_list, get_not_linked_discord_list, get_left_players
-from commands.command_clan_update import update_clan_data
-from commands.command_discord_update import update_discord_data
+from Queen_Spy.commands.command_link_list import get_not_linked_brawlhalla_list, get_not_linked_discord_list, get_left_players
+from Queen_Spy.commands.command_clan_update import update_clan_data
+from Queen_Spy.commands.command_discord_update import update_discord_data
 
 async def get_status(ctx, embed_color):
     # send loading message
