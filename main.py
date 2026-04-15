@@ -17,6 +17,8 @@ from commands.command_status import get_status
 from commands.command_link_add import add_link
 from commands.command_link_update import update_links
 from modules.assign import assign_all
+from modules.env import env_variable
+
 
 # VARIABLES
 intents = discord.Intents().all()
@@ -211,5 +213,6 @@ async def doc(ctx):
     )
 
 
-keep_alive()
-bot.run(os.environ['BOT_KEY'])
+
+def run_queen_spy():
+    bot.run(env_variable("QUEEN_SPY_BOT_TOKEN"))
