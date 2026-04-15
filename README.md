@@ -1,3 +1,7 @@
+Holy this documentation sucks please fix this
+
+---
+
 # Queen Spy Documentation 
 In short, Queen Spy manages the links between brawlhalla and discord accounts. This helps to see if there are currently people in the discord with the clan role that shouldn't have the clan role.
 
