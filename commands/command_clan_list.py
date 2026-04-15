@@ -2,7 +2,7 @@ import json
 
 
 async def get_clan_list(ctx):
-    with open('./data/data_clan_'+ctx.guild.name+'.json') as f:
+    with open('Queen_Spy/data/data_clan_'+ctx.guild.name+'.json') as f:
         clan_data = json.load(f)
 
     num = 1

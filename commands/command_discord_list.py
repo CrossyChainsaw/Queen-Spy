@@ -2,7 +2,7 @@ import json
 
 
 async def get_discord_list(ctx):
-    with open('./data/data_discord_'+ctx.guild.name+'.json') as f:
+    with open('Queen_Spy/data/data_discord_'+ctx.guild.name+'.json') as f:
         discord_data = json.load(f)
 
     num = 1

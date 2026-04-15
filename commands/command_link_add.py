@@ -7,7 +7,7 @@ g = 'swagg moment'
 
 async def add_link(bot, ctx, brawlhalla_id, discord_id, embed_color):
     # first check if the entry already exists
-    with open('./data/data_link_' + ctx.guild.name + '.json') as data:
+    with open('Queen_Spy/data/data_link_' + ctx.guild.name + '.json') as data:
         link_data = json.load(data)
     new_entry = True
     for user in link_data:
@@ -45,7 +45,7 @@ async def add_link(bot, ctx, brawlhalla_id, discord_id, embed_color):
         valid_brawlhalla_id = False
         valid_discord_id = False
         # check clan id
-        with open('./data/data_clan_' + ctx.guild.name + '.json') as data:
+        with open('Queen_Spy/data/data_clan_' + ctx.guild.name + '.json') as data:
             clan_data = json.load(data)
         for member in clan_data['clan']:
             if str(member['brawlhalla_id']) == str(brawlhalla_id):
@@ -59,7 +59,7 @@ async def add_link(bot, ctx, brawlhalla_id, discord_id, embed_color):
                 brawlhalla_name = member['name']
                 short_hand = True
         # check dc id
-        with open('./data/data_discord_' + ctx.guild.name + '.json') as data:
+        with open('Queen_Spy/data/data_discord_' + ctx.guild.name + '.json') as data:
             discord_data = json.load(data)
         for account in discord_data:
             if str(account['id']) == str(discord_id):
@@ -95,7 +95,7 @@ async def add_link(bot, ctx, brawlhalla_id, discord_id, embed_color):
             users = []
             users = link_data
             users.append(user.__dict__)
-            with open('./data/data_link_' + ctx.guild.name + '.json', 'w') as f:
+            with open('Queen_Spy/data/data_link_' + ctx.guild.name + '.json', 'w') as f:
                 some_data = json.dump(users, f)
 
             embed = discord.Embed(

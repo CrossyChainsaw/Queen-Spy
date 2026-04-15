@@ -8,10 +8,10 @@ import discord
 
 def update_links(ctx, embed_color):
   # get link list
-  with open('./data/data_link_'+ctx.guild.name+'.json') as f1:
+  with open('Queen_Spy/data/data_link_'+ctx.guild.name+'.json') as f1:
     link_data = json.load(f1)
   # get clan list
-  with open('./data/data_clan_'+ctx.guild.name+'.json') as f2:
+  with open('Queen_Spy/data/data_clan_'+ctx.guild.name+'.json') as f2:
     clan_data = json.load(f2)
 
   embed = discord.Embed(title='Name Changes', description='', color=embed_color)
@@ -29,7 +29,7 @@ def update_links(ctx, embed_color):
         break
   link_data_new = link_data
   # overwrite old data with new data
-  with open('./data/data_link_' + ctx.guild.name + '.json', 'w') as f:
+  with open('Queen_Spy/data/data_link_' + ctx.guild.name + '.json', 'w') as f:
     json.dump(link_data_new, f)
   # check if embed is empty
   if len(embed.description) == 0:
